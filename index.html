@@ -1,0 +1,119 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body class="mx-2">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top mx-lg-2 mx-md-2 mx-sm-2 px-lg-2 px-md-1 px-sm-1">
+    <a class="navbar-brand text-light" href="#" >SANKOFA WORDS</a>
+
+    <button class="navbar-toggler btn-primary" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link text-light" href="#">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Rules</a>
+        </li>
+       
+      </ul>
+    
+    </div>
+  </nav>
+    <div class="container my-4 p-lg-2 hidden" id="start">
+        <div class="position-relative  mx-lg-1 px-lg-1 px-md-1 px-sm-1 text-center text-muted bg-body border border-dashed rounded-3 intro">
+          <!-- <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button> -->
+          <svg class="bi mt-5 mb-3" width="48" height="48" aria-hidden="true"><use xlink:href="#check2-circle"></use></svg>
+          <h1 class="display-1 text-white fs-lg-4 fs-md-4 fs-sx-4">Sankofa Words</h1>
+          <p class="col-lg-6 m-auto text-light fs-4">
+            unscramble letters, uncover meanings and celebrate the richness of African languages with Sankofa words - where words come alive
+          </p>
+          <button class="btn btn-primary px-2 my-4" type="button" id="btn">
+            Start Game
+          </button>
+        </div>
+    </div>
+
+    <div class="container  p-lg-2" id="game">
+        <div class="card my-2 p-1 text-center bg-transparent">
+            <div class="card-header my-1">
+              <h1 class=" display-2 text-light my-2">Asante!</h1>
+              <blockquote class="text-light fs-lg-4 fs-md-4 fs-sx-4">:"The stick of truth may be overstretched but truth will eventually prevail" - African proverb</blockquote>
+            </div>
+            <div class="card-body">
+              <h3 class="display-1 card-title text-light" id="cw"></h3>
+              <p class="card-text text-light fs-4">Draw</p>
+           
+            </div>
+          </div>
+       
+<div class="input-group">
+  <input type="text" class="form-control" id="entry" placeholder="Enter word here" aria-label="Enter word here" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary text-light" type="button" id="btn2">Check word</button>
+    <button class="btn btn-outline-secondary text-light" type="button" id="btn3">Refresh</button>
+  </div>
+</div>
+          
+      </div>
+
+      <div class="container bg-transparent"> 
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-1 border-top">
+           <p class="display-6 mb-0 text-white fs-6">© 2025 Diamond Tech, Inc</p>
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-2 mb-md-0 me-md-auto  text-decoration-none" aria-label="Bootstrap">
+               <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg>
+               </a> <ul class="nav col-md-4 justify-content-end">
+                 <li class="nav-item">
+                  <a href="rules.html" class="nav-link px-1 fw-700 text-light">Rules</a>
+                </li> 
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link px-1 fw-700 text-light">About</a>
+                </li> 
+                
+                 </ul>
+                 </footer>
+     </div>
+     <script src="index.js"></script>
+         <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBgyvhTDIS6W3D45WkczQTMTnkN0Igy_kM",
+    authDomain: "thobilenontenja-291ff.firebaseapp.com",
+    projectId: "thobilenontenja-291ff",
+    storageBucket: "thobilenontenja-291ff.firebasestorage.app",
+    messagingSenderId: "890324269319",
+    appId: "1:890324269319:web:abebd82b316bad36d2eda2",
+    measurementId: "G-5CR3VLBVDF"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

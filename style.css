@@ -1,0 +1,107 @@
+.blur-overlay {
+  /* background-color: rgba(255, 255, 255, 0.1); Semi-transparent overlay */
+  /* backdrop-filter: blur(10px); Adjust blur intensity */
+  /* padding: 20px;
+  border-radius: 10px; */
+}
+
+body{
+    background-image: url('5.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Pixelify Sans", sans-serif !important;
+    backdrop-filter: blur(3.1px);
+
+    
+    height: 100vh;
+    /* margin: 2px; */
+}
+
+nav button{
+    background-color: black !important;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+.hidden{
+    display: none;
+} 
+
+.active{
+    display: block;
+}
+
+
+
+
+
+
+
+.intro{
+    background-image: url('4.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    :root {
+        --african-sun: #e67e22;
+        --earth-brown: #7a4c2c;
+        --savanna-green: #27ae60;
+    }
+
+    .sankofa-symbol {
+        background: rgba(230, 126, 34, 0.1);
+        padding: 1.5rem;
+        border-radius: 50%;
+        border: 2px dashed var(--african-sun);
+        animation: pulse 2s infinite;
+    }
+
+    .feature-item {
+        text-align: center;
+        padding: 1rem;
+        background: transparent;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .feature-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(0.95); }
+        50% { transform: scale(1); }
+        100% { transform: scale(0.95); }
+    }
+
+    .btn-warning {
+        background: var(--african-sun);
+        border: none;
+        color: white;
+        font-weight: 600;
+    }
+
+  
