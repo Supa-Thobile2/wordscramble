@@ -7,6 +7,7 @@ const cwEl = document.getElementById('cw')
 
 const btn = document.getElementById('btn2')
 const entryEl = document.getElementById('entry')
+const paraEl = document.getElementById('result')
 
 
 let correctWord;
@@ -40,9 +41,9 @@ btnEl.addEventListener('click',function(){
 //ame play
 
 btn.addEventListener('click',function(){
-   let result = entryEl.value
-    
    
+    
+   gameOn()
     
     
 })
@@ -57,7 +58,19 @@ function gameOn(){
         [randomResult[i], randomResult[j]] = [randomResult[j], randomResult[i]]
     }
   
-    cwEl.innerText = randomnword.word
+    
+
+    let result = cwEl.innerText = randomnword.word.split('').reverse().join('')
+
+    correctWord =  entryEl.value.split('').reverse().join('')
+
+    // if(result == correctWord){
+
+    //     paraEl.innerText = `You are correct! The correct word is ${correctWord.split('').reverse().join('')}`
+
+    // }else{
+    //          paraEl.innerText = `You are correct! The correct word is not correct. Try again!.`
+    // }
 }
 
 gameOn()
