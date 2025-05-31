@@ -53,8 +53,16 @@ nav button{
     backdrop-filter: blur(4px) !important;
 }
 
-
-
+.title{
+    font-family: 2rem;
+}
+.list>*{
+    font-size: .8rem;
+    padding: 6px !important;
+    background-color: transparent !important;
+    border-bottom: none !important;
+    color: #fff !important;
+}
 
 
 
