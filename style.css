@@ -8,6 +8,24 @@
     letter-spacing: .2rem;
 }
 
+.p-3{
+    font-size: .6rem;
+    letter-spacing: .2rem;
+}
+
+.lead{
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+h5{
+    font-size: 1rem !important;
+}
+
+span{
+    font-size: .3rem !important;
+}
+
 body{
     background-image: url('5.jfif');
     background-position: center;
