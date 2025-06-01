@@ -1,16 +1,22 @@
 .display-1{
     font-size: 4rem !important;
     letter-spacing: .2rem;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.p-2{
-    font-size: 1rem;
+.p2{
+    font-size: .6rem;
     letter-spacing: .2rem;
+     margin: 0 !important;
+    padding: 0 !important;
 }
 
 .p-3{
     font-size: .6rem;
     letter-spacing: .2rem;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .lead{
@@ -20,10 +26,14 @@
 
 h5{
     font-size: 1rem !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
 }
 
 span{
-    font-size: .3rem !important;
+    font-size: .4rem !important;
+     margin: 0 !important;
+    padding: 0 !important;
 }
 
 body{
@@ -34,8 +44,7 @@ body{
     font-family: "Pixelify Sans", sans-serif !important;
     backdrop-filter: blur(3.1px);
 
-    
-    height: 100vh;
+   
     /* margin: 2px; */
 }
 
