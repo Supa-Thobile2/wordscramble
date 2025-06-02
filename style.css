@@ -1,8 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .display-1{
-    font-size: 4rem !important;
+    font-size: 3rem !important;
     letter-spacing: .2rem;
+    font-weight: bolder;
     margin: 0 !important;
     padding: 0 !important;
+}
+
+.display-2{
+    font-size: 4rem !important;
+    letter-spacing: .2rem;
+    margin: 2rem !important;
+    padding: 0 !important;
+    font-weight: bolder;
+
+}
+
+@media (max-width: 375px) {
+    .display-1{
+        font-size: 1rem !important;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    };
+
+    
+
+    .p2{
+        font-size: 8px !important;
+        justify-content: left;
+    }
 }
 
 .p2{
@@ -18,7 +48,9 @@
     margin: 0 !important;
     padding: 0 !important;
 }
-
+#f4{
+    font-size: 12rem;
+}
 .lead{
     padding: 0 !important;
     margin: 0 auto !important;
@@ -45,7 +77,7 @@ body{
     backdrop-filter: blur(3.1px);
 
    
-    margin: 2px;
+    
 }
 
 nav button{
@@ -58,7 +90,7 @@ nav button{
 }
 
 #start{
-    margin: 4rem auto;
+    margin: 1rem auto;
     
 }
 
@@ -86,6 +118,13 @@ nav button{
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(4px) !important;
+    padding: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .title{
@@ -99,8 +138,20 @@ nav button{
     color: #fff !important;
 }
 
+main{
+    margin: 0 auto;
+    padding: 0;
+}
 
+@media (min-width: 375px) {
+    main{
+        width: 100%;
+        margin: 3rem auto;
+        
+    }
 
+   
+}
 
 
 
