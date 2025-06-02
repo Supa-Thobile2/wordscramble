@@ -144,6 +144,12 @@ nav button{
 }
 
 
+@media (min-width: 375px) {
+    .list>*{
+        font-size: .4rem;
+    }
+}
+
 
 @media (min-width: 375px) {
     main{
