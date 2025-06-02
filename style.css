@@ -136,7 +136,7 @@ nav button{
     font-family: 2rem;
 }
 .list>*{
-    font-size: .8rem;
+    font-size: .7rem !important;
     padding: 6px !important;
     background-color: transparent !important;
     border-bottom: none !important;
