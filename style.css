@@ -143,10 +143,7 @@ nav button{
     color: #fff !important;
 }
 
-main{
-    margin: 0 auto;
-    padding: 0;
-}
+
 
 @media (min-width: 375px) {
     main{
