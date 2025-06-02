@@ -4,6 +4,7 @@ const startEl = document.getElementById('start')
 
 
 const cwEl = document.getElementById('cw')
+const hintEl = document.getElementById('hint')
 
 const btn = document.getElementById('btn2')
 const entryEl = document.getElementById('entry')
@@ -62,7 +63,11 @@ function gameOn(){
 
     let result = cwEl.innerText = randomnword.word.split('').reverse().join('')
 
-    correctWord =  entryEl.value.split('').reverse().join('')
+    let hint = hintEl.innerText = randomnword.hint
+
+    correctWord =  
+
+console.log(hint)
 
     // if(result == correctWord){
 
