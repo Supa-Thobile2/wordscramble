@@ -20,11 +20,19 @@
 
 }
 
+.display-3{
+    font-size: 1.5rem !important;
+}
+
 @media (max-width: 375px) {
     .display-1{
         font-size: .5rem !important;
         font-weight: bolder;
         letter-spacing: 1px;
+    }
+
+    .display-3{
+        font-size: 1.1rem !important;
     }
     #f4{
         font-size: .6rem;
