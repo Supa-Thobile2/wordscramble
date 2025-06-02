@@ -5,7 +5,7 @@
 }
 .display-1{
     font-size: 4rem !important;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     font-weight: bolder;
     margin: 0 !important;
     padding: 0 !important;
@@ -22,7 +22,7 @@
 
 @media (max-width: 375px) {
     .display-1{
-        font-size: 3rem !important;
+        font-size: 1.6rem !important;
         font-weight: bolder;
         letter-spacing: 1px;
     }
@@ -30,11 +30,13 @@
         font-size: .6rem;
     }
 
+
     
 
     .p2{
-        font-size: 8px !important;
-        justify-content: left;
+        font-size: .3rem !important;
+        /* justify-content: left; */
+        padding: 2rem 0;
     }
 }
 
@@ -93,7 +95,7 @@ nav button{
 }
 
 #start{
-    margin: 1rem auto;
+    margin: 4rem auto;
     
 }
 
