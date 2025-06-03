@@ -67,12 +67,18 @@ function gameOn(){
 
     correctWord =  result.split('').reverse().join('')
 
+    let input = entryEl.value
+
 console.log(hint)
 
-    if(entryEl.value == correctWord){
+    if(input == ''){
 
-        paraEl.innerText = `You are correct! The correct word is ${correctWord.split('').reverse().join('')}`
+        return paraEl.innerText = `This field cant be empty`
 
+    }else if(input == correctWord){
+        return paraEl.innerText = `Correct! The corect word is ${correctWord}`
+    }else{
+        return paraEl.innerText = 'Incorrect word entered. Try again.'
     }
 }
 
