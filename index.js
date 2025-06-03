@@ -65,17 +65,15 @@ function gameOn(){
 
     let hint = hintEl.innerText = randomnword.hint
 
-    correctWord =  
+    correctWord =  result.split('').reverse().join('')
 
 console.log(hint)
 
-    // if(result == correctWord){
+    if(entryEl.value == correctWord){
 
-    //     paraEl.innerText = `You are correct! The correct word is ${correctWord.split('').reverse().join('')}`
+        paraEl.innerText = `You are correct! The correct word is ${correctWord.split('').reverse().join('')}`
 
-    // }else{
-    //          paraEl.innerText = `You are correct! The correct word is not correct. Try again!.`
-    // }
+    }
 }
 
 gameOn()
